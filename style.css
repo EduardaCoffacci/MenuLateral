@@ -1,0 +1,61 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+}
+body{
+    font-family: Arial;
+    height: 100vh;
+    background: url(img/forget-me-nots-g48df0b195_1280.jpg);
+    background-position: center;
+    background-size: cover;
+
+    
+   
+   
+      
+}  
+input[type="checkbox"] {
+    display: none;
+}
+nav
+{
+    background-color: rgba(16,16,16,.5);
+    height:100%;
+    width:350px; 
+    position: absolute;
+    left: -350px;
+    transition: all .5s;
+
+           
+}
+a {
+    display:block;
+    padding: 20px 5px;
+    color: white;
+}
+a:hover{
+    background: rgba(176,224,230);
+    color: #000;
+}
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1; /*utilizado para o elemento ficar na frente do outro*/
+  
+    
+}
+ul{
+   
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+
+}
